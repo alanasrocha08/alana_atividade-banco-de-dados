@@ -4,6 +4,7 @@
 CREATE DATABASE tecinternet_escola_alana CHARACTER SET utf8mb4;
 ```
 
+
 ### Cria tabela de Cursos
 
 ```sql
@@ -23,7 +24,7 @@ CREATE TABLE professores(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nome TEXT NOT NULL,
     area_atuacao ENUM('design', 'desenvolvimento', 'infra'),
-    cursos_id INT NOR NULL
+    cursos_id INT NOT NULL
 );
 ```
 
