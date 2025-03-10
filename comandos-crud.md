@@ -1,6 +1,6 @@
 ## Criar relacionamento entre as tabelas
 
-### Cadastrando 5 curso
+### Cadastrando 5 cursos
 
 ```sql
 
