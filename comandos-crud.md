@@ -49,7 +49,7 @@ INSERT INTO professores (nome, area_atuacao)
 VALUES
 (
     'Jon Oliva ',
-    'infra'
+    'infra',
     5
 );
 
