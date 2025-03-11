@@ -45,7 +45,7 @@ VALUES
 
 ```sql
 
-INSERT INTO professores (nome, area_atuacao)
+INSERT INTO professores (nome, area_atuacao, curso_id)
 VALUES
 (
     'Jon Oliva ',
@@ -53,7 +53,7 @@ VALUES
     5
 );
 
-INSERT INTO professores (nome, area_atuacao)
+INSERT INTO professores (nome, area_atuacao, curso_id)
 VALUES
 (
     'Lemmy Kilmister',
@@ -61,7 +61,7 @@ VALUES
     4
 );
 
-INSERT INTO professores (nome, area_atuacao)
+INSERT INTO professores (nome, area_atuacao, curso_id)
 VALUES
 (
     'Neil Peart',
@@ -69,7 +69,7 @@ VALUES
     3
 );
 
-INSERT INTO professores (nome, area_atuacao)
+INSERT INTO professores (nome, area_atuacao, curso_id)
 VALUES
 (
     'Ozzy Osbourne',
