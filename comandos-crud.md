@@ -112,8 +112,8 @@ INSERT INTO alunos (nome, data_nascimento, primeira_nota, segunda_nota, curso_id
 INSERT INTO alunos (nome, data_nascimento, primeira_nota, segunda_nota, curso_id) VALUES
 (
     'Júlia',
-    '2007-04-17',
-    8.00,
+    '2007-05-17',
+    8.50,
     7.00,
     2
 );
@@ -139,8 +139,8 @@ INSERT INTO alunos (nome, data_nascimento, primeira_nota, segunda_nota, curso_id
 INSERT INTO alunos (nome, data_nascimento, primeira_nota, segunda_nota, curso_id) VALUES
 (
     'Isabela',
-    '2007-11-11',
-    9.00,
+    '2007-09-11',
+    9.20,
     5.00,
     3
 );
@@ -159,7 +159,7 @@ INSERT INTO alunos (nome, data_nascimento, primeira_nota, segunda_nota, curso_id
     'Sofia',
     '2007-11-14',
     7.00,
-    7.00,
+    7.10,
     5
 );
 
@@ -168,7 +168,7 @@ INSERT INTO alunos (nome, data_nascimento, primeira_nota, segunda_nota, curso_id
     'Leandro',
     '2007-11-14',
     3.00,
-    5.00,
+    5.35,
     5
 );
 
@@ -177,7 +177,7 @@ INSERT INTO alunos (nome, data_nascimento, primeira_nota, segunda_nota, curso_id
     'Vitor',
     '2007-11-12',
     6.00,
-    8.00,
+    1.50,
     1
 );
 
