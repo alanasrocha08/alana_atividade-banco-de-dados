@@ -84,6 +84,17 @@ VALUES
     'desenvolvimento',
     1
 );
+
+UPDATE cursos SET professor_id = (SELECT id FROM professores WHERE nome = 'David Gilmourne') WHERE nome = 'Front-End';
+
+UPDATE cursos SET professor_id = (SELECT id FROM professores WHERE nome = 'Ozzy Osbourne') WHERE nome = 'Back-End';
+
+UPDATE cursos SET professor_id = (SELECT id FROM professores WHERE nome = 'Neil Peart') WHERE nome = 'UX/UI Design';
+
+UPDATE cursos SET professor_id = (SELECT id FROM professores WHERE nome = 'Lemmy Kilmister') WHERE nome = 'Figma';
+
+UPDATE cursos SET professor_id = (SELECT id FROM professores WHERE nome = 'Jon Oliva') WHERE nome = 'Redes de computadores';
+
 ```
 
 ### Cadastrando 10 alunos 
