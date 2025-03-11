@@ -1,6 +1,6 @@
 ## Criar relacionamento entre as tabelas
 
-### Cadastrando 5 curso
+### Cadastrando 5 cursos
 
 ```sql
 
@@ -49,7 +49,7 @@ INSERT INTO professores (nome, area_atuacao)
 VALUES
 (
     'Jon Oliva ',
-    'infra'
+    'infra',
     5
 );
 
