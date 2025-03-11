@@ -10,9 +10,9 @@ CREATE DATABASE tecinternet_escola_alana CHARACTER SET utf8mb4;
 ```sql
 CREATE TABLE cursos(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    titulo TEXT NOT NULL,
-    carga_horaria TEXT NOT NULL,
-    professores_id INT NOT NULL
+    nome TEXT NOT NULL,
+    carga_horaria INT NOT NULL,
+    professor_id INT NOT NULL
 );
 
 ```
@@ -24,7 +24,7 @@ CREATE TABLE professores(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nome TEXT NOT NULL,
     area_atuacao ENUM('design', 'desenvolvimento', 'infra'),
-    cursos_id INT NOT NULL
+    curso_id INT NOT NULL
 );
 ```
 
@@ -35,8 +35,8 @@ CREATE TABLE alunos(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nome TEXT NOT NULL,
     data_nascimento VARCHAR(45) NOT NULL,
-    primeira_nota INT NOT NULL,
-    segunda_nota INT NOT NULL,
-    cursos_id INT NOT NULL
+    primeira_nota DECIMAL NOT NULL,
+    segunda_nota DECIMAL NOT NULL,
+    curso_id INT NOT NULL
 );
 ```
