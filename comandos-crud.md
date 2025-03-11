@@ -4,39 +4,39 @@
 
 ```sql
 
-INSERT INTO cursos (titulo, carga_horaria)
+INSERT INTO cursos (nome, carga_horaria)
 VALUES
 (
     'Front-End',
-    'Carga Horária 40h'
+    40
 );
 
-INSERT INTO cursos (titulo, carga_horaria)
+INSERT INTO cursos (nome, carga_horaria)
 VALUES
 (
     'Back-End',
-    'Carga Horária 80h'
+    80
 );
 
-INSERT INTO cursos (titulo, carga_horaria)
+INSERT INTO cursos (nome, carga_horaria)
 VALUES
 (
     'UX/UI Design',
-    'Carga Horária 30h'
+    30
 );
 
-INSERT INTO cursos (titulo, carga_horaria)
+INSERT INTO cursos (nome, carga_horaria)
 VALUES
 (
     'Figma',
-    'Carga Horária 10h'
+    10
 );
 
-INSERT INTO cursos (titulo, carga_horaria)
+INSERT INTO cursos (nome, carga_horaria)
 VALUES
 (
     'Redes de computadores',
-    'Carga Horária 100h'
+    100
 
 );
 ```
@@ -77,7 +77,7 @@ VALUES
     2
 );
 
-INSERT INTO professores (nome, area_atuacao)
+INSERT INTO professores (nome, area_atuacao, curso_id)
 VALUES
 (
     'David Gilmourne',
