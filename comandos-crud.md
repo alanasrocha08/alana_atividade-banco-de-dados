@@ -191,21 +191,32 @@ INSERT INTO alunos (nome, data_nascimento, primeira_nota, segunda_nota, curso_id
 );
 ```
 
+---
+
 ### CRUD - Consultas
 
-#### Mostrando alunos que nasceram antes de 2009
+#### Alunos que nasceram antes de 2009
 
 ```sql
 SELECT nome, data_nascimento FROM alunos
 WHERE data_nascimento < 2009;
 ```
 
-#### Calculando a média de notas de cada aluno
+#### Média da notas de cada aluno
 
 ```sql
 SELECT nome, ROUND((primeira_nota + segunda_nota) / 2, 2) AS "Média das notas"
 FROM alunos;
 ```
+#### Limite de faltas
 
+```sql
+SELECT 
+    cursos.nome AS Curso,
+    cursos.carga_horaria AS 'Carga horária',
+    (carga_horaria * 0.25) AS 'Limite de faltas'
+FROM cursos
+ORDER BY Curso ASC; 
+```
 
 
