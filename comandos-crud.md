@@ -200,5 +200,12 @@ SELECT nome, data_nascimento FROM alunos
 WHERE data_nascimento < 2009;
 ```
 
+#### Calculando a média de notas de cada aluno
+
+```sql
+SELECT nome, ROUND((primeira_nota + segunda_nota) / 2, 2) AS "Média das notas"
+FROM alunos;
+```
+
 
 
