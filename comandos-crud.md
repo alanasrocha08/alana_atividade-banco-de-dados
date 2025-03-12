@@ -236,4 +236,16 @@ FROM professores
 GROUP BY area_atuacao;
 ```
 
+#### 6 - nome dos alunos, o título e a carga horária dos cursos que fazem
+
+```sql
+SELECT 
+    alunos.nome AS Alunos,
+    cursos.nome AS Curso,
+    cursos.carga_horaria AS 'Carga Horária'
+FROM alunos
+    INNER JOIN cursos ON alunos.curso_id = cursos.id
+ORDER BY Alunos ASC;
+```
+
 
