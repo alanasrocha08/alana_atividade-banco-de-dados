@@ -284,5 +284,20 @@ GROUP BY cursos.nome
 ORDER BY "Quantidade de Alunos" DESC;
 ```
 
+#### 10 - Nome dos alunos, suas notas, médias, e o título dos cursos que fazem (Somente de Front-End e Back-End).
+
+```sql
+SELECT 
+    alunos.nome AS Aluno,
+    alunos.primeira_nota AS 'Nota 1',
+    alunos.segunda_nota AS 'Nota 2',
+    ROUND((primeira_nota + segunda_nota) / 2, 2) AS Media,
+    cursos.nome AS Curso
+FROM alunos
+    INNER JOIN cursos ON alunos.curso_id = cursos.id
+WHERE cursos.nome IN ('Front-End', 'Back-End')
+ORDER BY alunos.nome ASC;
+```
+
 
 
