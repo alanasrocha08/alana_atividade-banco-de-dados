@@ -191,3 +191,14 @@ INSERT INTO alunos (nome, data_nascimento, primeira_nota, segunda_nota, curso_id
 );
 ```
 
+### CRUD - Consultas
+
+#### Mostrando alunos que nasceram antes de 2009
+
+```sql
+SELECT nome, data_nascimento FROM alunos
+WHERE data_nascimento < 2009;
+```
+
+
+
