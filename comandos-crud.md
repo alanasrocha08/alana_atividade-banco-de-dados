@@ -272,6 +272,17 @@ FROM alunos
 ORDER BY Aluno ASC;
 ```
 
+#### 9 - Quantidade de alunos que cada curso possui.
+
+```sql
+SELECT 
+    cursos.nome AS Curso,
+    COUNT(alunos.id) AS "Quantidade de Alunos"
+FROM alunos
+    INNER JOIN cursos ON alunos.curso_id = cursos.id
+GROUP BY cursos.nome
+ORDER BY "Quantidade de Alunos" DESC;
+```
 
 
 
