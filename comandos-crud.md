@@ -227,4 +227,13 @@ SELECT nome FROM professores
 WHERE area_atuacao = 'desenvolvimento';
 ```
 
+#### 5 - Quantidade de professores que cada área possui
+
+```sql
+SELECT area_atuacao AS Área, 
+COUNT(id) AS "Qtd de Professores"
+FROM professores
+GROUP BY area_atuacao;
+```
+
 
