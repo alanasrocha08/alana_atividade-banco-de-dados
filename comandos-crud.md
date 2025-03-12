@@ -248,4 +248,16 @@ FROM alunos
 ORDER BY Alunos ASC;
 ```
 
+#### 7 - nome dos professores e o título do curso que lecionam.
+
+```sql
+SELECT 
+    professores.nome AS Professor,
+    cursos.nome AS Curso
+FROM professores
+    INNER JOIN cursos ON professores.curso_id = cursos.id
+ORDER BY Professor ASC;
+```
+
+
 
