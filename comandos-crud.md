@@ -309,5 +309,15 @@ UPDATE cursos SET carga_horaria = 15
 WHERE id = 4 
 ```
 
+#### 12 -  Excluir um aluno do curso de Redes de Computadores e um aluno do curso de UX/UI.
+
+```sql
+DELETE FROM alunos 
+WHERE curso_id = 5 LIMIT 1;
+
+DELETE FROM alunos 
+WHERE curso_id = 3 LIMIT 1;
+```
+
 
 
