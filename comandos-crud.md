@@ -370,7 +370,6 @@ SELECT
     COUNT(*) AS 'Qtd Alunos Aprovados'
 FROM alunos
 WHERE (primeira_nota + segunda_nota) / 2 >= 7;
-
 ```
 
 
