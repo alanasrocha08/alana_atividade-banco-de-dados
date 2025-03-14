@@ -352,6 +352,17 @@ WHERE (primeira_nota + segunda_nota) / 2 >= 7
 ORDER BY Media DESC;
 ```
 
+##### 3 - calcular a média das notas de cada aluno e mostre somente os alunos que tiveram a média menor que 7.
+
+```sql
+SELECT 
+    nome AS Aluno,
+    ROUND((primeira_nota + segunda_nota) / 2, 2) AS Media
+FROM alunos
+WHERE (primeira_nota + segunda_nota) / 2 < 7
+ORDER BY Media DESC;
+```
+
 
 
 
