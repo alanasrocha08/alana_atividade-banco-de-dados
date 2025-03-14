@@ -319,5 +319,16 @@ DELETE FROM alunos
 WHERE curso_id = 3 LIMIT 1;
 ```
 
+#### 13 -  Lista de alunos atualizada e o título dos cursos que fazem, classificados pelo nome do aluno.
+
+```sql
+SELECT 
+    alunos.nome AS Aluno,
+    cursos.nome AS Curso
+FROM alunos
+INNER JOIN cursos ON alunos.curso_id = cursos.id
+ORDER BY Aluno ASC;
+```
+
 
 
