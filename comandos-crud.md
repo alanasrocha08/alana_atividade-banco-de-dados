@@ -363,6 +363,14 @@ WHERE (primeira_nota + segunda_nota) / 2 < 7
 ORDER BY Media DESC;
 ```
 
+##### 4 - Criar uma consulta que mostre a quantidade de alunos com média maior ou igual a 7.
 
+```sql
+SELECT 
+    COUNT(*) AS 'Qtd Alunos Aprovados'
+FROM alunos
+WHERE (primeira_nota + segunda_nota) / 2 >= 7;
+
+```
 
 
